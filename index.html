@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.mainDiv{
+		text-align: center;
+
+	}
+	
+		
+	</style>
+</head>
+<body>
+<div class="mainDiv">
+<h2>JavaScrip call,apply and bind</h2>
+	
+</div>
+<script type="text/javascript">
+console.log(this)
+
+//you can't reassign and redeclare variable using const
+/*const m="Majahar";
+m='ff';
+
+console.log(m);*/// throw Uncaught TypeError: Assignment to constant variable.
+
+
+//JavaScrip call,apply and bind 
+
+let name = {
+	
+	printFullName : function(place,country){
+		console.log(this.firstName+" "+this.lastName+" from "+place+" in "+country);
+	}
+}
+
+var person1={
+	firstName:"Majahar",
+	lastName : "Khan"
+
+}
+var person2={
+	firstName:"bb",
+	lastName : "nn"
+
+}
+name.printFullName.call(person1,"Mumbai","India");
+name.printFullName.apply(person2,["Mumbai","India"]);
+name.printFullName.bind(person2,["Mumbai","India"]);
+
+</script>
+
+</body>
+</html>

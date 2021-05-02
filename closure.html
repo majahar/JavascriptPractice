@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.mainDiv{
+		text-align: center;
+
+	}
+	
+		
+	</style>
+</head>
+<body>
+<div class="mainDiv">
+<h2>
+	Prototype
+</h2>
+</div>
+<script type="text/javascript">
+
+var Mobile =function(mobile_number){
+
+	this.name="abc";
+	this.brand='xyz';
+}
+
+var samsung= new Mobile('1234');
+var nokia= new Mobile('1234');
+
+Mobile.prototype.color='white';
+document.write(samsung.color)
+
+console.log(nokia);
+
+
+
+</script>
+
+</body>
+</html>

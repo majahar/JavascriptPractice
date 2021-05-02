@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.mainDiv{
+		text-align: center;
+
+	}
+	
+		
+	</style>
+</head>
+<body>
+<div class="mainDiv">
+<h2>Call Stack & Execution Context Explained With Live Example</h2>
+	
+</div>
+<script type="text/javascript">
+
+function a(){
+	debugger;
+	console.log("a is calling")
+	b()
+}
+
+function b(){
+	debugger;
+	console.log("b is calling")
+	debugger;
+
+	c()
+	console.log("hhgjjjgg jbjgjv")
+
+}
+
+function c(){
+	debugger;
+	console.log("c is calling")
+
+
+}
+a();
+
+</script>
+
+</body>
+</html>
